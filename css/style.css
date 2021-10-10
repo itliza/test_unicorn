@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'nekst-regularregular';
+    src: url('../fonts/nekst-regular-webfont.eot');
+    src: url('../fonts/nekst-regular-webfont.woff2') format('woff2'),
+         url('../fonts/nekst-regular-webfont.woff') format('woff'),
+         url('../fonts/nekst-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+    font-family: 'nekst-regularregular', Arial, sans-serif;
+}
+.wrapper {
+	background: #101118;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.close-btn {
+	position: absolute;
+	background: transparent;
+	border: none;
+	padding: 0;
+	top: 15px;
+	right: 15px;
+}
+.close-btn:hover {
+	box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
+}
+.box {
+	padding: 80px 60px;
+	background: #1E1F28;
+	border-radius: 5px;
+	max-width:  576px;
+	position: relative;
+}
+.header {
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+}
+.content {
+	font-size: 22px;
+	color: #8E8F93;
+	margin: 30px 0;
+	text-align: center;
+}
+.input {
+	display: block;
+	text-transform: uppercase;
+	border-radius: 5px;
+	width: 100%;
+    font-family: 'nekst-regularregular', Arial, sans-serif;
+	line-height: 62px;
+	color: #fff;
+}
+.email {
+	font-size: 14px;
+	background: rgba(39, 39, 47, 1);
+	margin: 30px 0 40px;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	padding: 0 24px;
+}
+.email::placeholder {
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.5);
+}
+.submit {
+	border: none;
+	font-size: 16px;
+	background: rgba(7, 242, 180, 0.6);
+}
+
+@media only screen
+
+	and (max-width: 430px) {
+
+		.box {
+			padding: 25px 22px;
+		}
+		.header {
+			font-size: 20px;
+		}
+		.content {
+			font-size: 15px;
+			margin: 20px 0;
+		}
+		.input {
+			line-height: 40px;
+		}
+		.email {
+			font-size: 10px;
+			margin: 15px 0 25px;
+		}
+		.email::placeholder {
+			font-size: 10px;
+		}
+		.submit {
+			font-size: 12px;
+		}
+		.close-btn {
+			top: 10px;
+			right: 10px;
+		}
+		.close-btn svg {
+			width: 10px;
+			height: 10px;
+		}
+	}
